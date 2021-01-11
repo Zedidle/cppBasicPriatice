@@ -32,8 +32,6 @@ namespace Define
 		cout << Factorial(x) << endl;
 	}
 
-
-
 	void Test()
 	{
 		Define::GetArea(10);
@@ -50,4 +48,5 @@ namespace Define
 		test1("test1: i = %d, f = %g, s = %s\n", i, f, s);
 		test2("test2: i = %d, f = %g, s = %s\n", i, f, s);
 	}
+
 }

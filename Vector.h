@@ -1,9 +1,110 @@
 #include "iostream"
+#include "numeric"
 using namespace std;
 
 
 namespace Vector
 {
+
+
+	void Test5() {
+		vector<int> vec;
+		for (int i = 0; i < 10; i++) {
+			vec.emplace_back(i);
+		}
+	}
+
+
+
+	// reverse 的测试
+	void Test4() {
+		
+		cout << (-3) % 2 << endl;
+
+		//vector<short> vec2;
+		//vec2.resize(1000);
+		//iota(vec2.begin(), vec2.end(), 1);
+		//for (auto i : vec2) {
+		//	cout << i << " ";
+		//}
+
+
+		cout << endl;
+
+		vector<short> vec;
+		for (int i = 0; i < 100; i++) {
+			vec.push_back(i);
+		}
+		for (auto i: vec) {
+			cout << i << " ";
+		}
+		cout <<endl;
+		reverse(vec.begin(), vec.end());
+		for (auto i : vec) {
+			cout << i << " ";
+		}
+	}
+
+
+	void Test3() {
+		//	研究 size() 和 capacity() 的区别；
+		vector<short> vec(102);
+		cout << "Init:" << endl;
+		cout << "size:" << vec.size() << endl;
+		cout << "capacity:" << vec.capacity() << endl;
+		cout << endl;
+		
+		vec.push_back(10); // 因为当前size = capacity，因此会触发扩容，让capacity扩大0.5倍；
+		cout << "after push_back:" << endl;
+		cout << "size:" << vec.size() << endl;
+		cout << "capacity:" << vec.capacity() << endl;
+		cout << endl;
+
+		vec.resize(80); // 改变 size 而不改变 capacity；
+		cout << "after resize:" << endl;
+		cout << "size:" << vec.size() << endl;
+		cout << "capacity:" << vec.capacity() << endl;
+		cout << endl;
+
+		vec.reserve(400);   // 超出的实际使用部分就会称为缓冲区 -> capacity = 400；
+		cout << "after reserve:" << endl;
+		cout << "size:" << vec.size() << endl;
+		cout << "capacity:" << vec.capacity() << endl;
+		cout << endl;
+
+		vec.erase(vec.begin(), vec.begin()+4); // 只会改变size；
+		cout << "after erase:" << endl;
+		cout << "size:" << vec.size() << endl;
+		cout << "capacity:" << vec.capacity() << endl;
+		cout << endl;
+
+		if (0) {
+			//vec.clear(); // 只会改变size；
+			//cout << "after clear:" << endl;
+			//cout << "size:" << vec.size() << endl;
+			//cout << "capacity:" << vec.capacity() << endl;
+			//cout << endl;
+		}
+		else {
+
+
+			//decltype(vec) vec2;
+			//swap(vec, vec2);  // 通过swap可以释放内存
+			//cout << "after swap:" << endl;
+			//cout << "1 size:" << vec.size() << endl;
+			//cout << "1 capacity:" << vec.capacity() << endl;
+			//cout << "2 size:" << vec.size() << endl;
+			//cout << "2 capacity:" << vec.capacity() << endl;
+			cout << endl;
+		}
+
+
+
+	}
+
+
+
+
 
 	void Test2()
 	{

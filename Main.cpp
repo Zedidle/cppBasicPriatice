@@ -35,21 +35,35 @@ using namespace std;
 #include "inherit.h"
 #include "Copy.h"
 #include "Decltype.h"
-
+#include "Cast.h"
 
 
 int main()
 {
+
+
+
+
+	//Cast::const_Test();
+	//Cast::static_Test();
+	//Cast::dynamic_Test();
+	//Cast::reinterpret_Test();
+
+
 	// 模板
 	//Template::Test();
 	//Template::Test2();
 	//Template::Test3();
 	//Template::Test4();
+	//Template::Test5();
+	//Template::Test6();
 
 	// 友元
 	//Friend::Test();
 
 	// 虚函数和纯虚函数
+	//Virtual::Test2();
+	//Virtual::Test1();
 	//Virtual::Test();
 
 	// 宏定义
@@ -57,11 +71,13 @@ int main()
 	
 	// 关于内存 RALL机制
 	//Malloc::Test();
+	//Malloc::Test1();
 
 	//Array2d::Test();
 	
 
 	// Const
+	//Const::Test1();
 	//Const::Test();
 
 	// Static
@@ -86,6 +102,9 @@ int main()
 	//PAR::Test();
 
 	// Vector
+	Vector::Test5();
+	//Vector::Test4();
+	//Vector::Test3();
 	//Vector::Test2();
 	//Vector::Test();
 
@@ -93,7 +112,7 @@ int main()
 	//Delegate::Test();
 	//Delegate::Test1();
 	//Delegate::Test2();
-	Delegate::Test3();
+	//Delegate::Test3();
 
 	//IO::Test();
 
@@ -118,7 +137,7 @@ int main()
 	// auto_ptr
 	//Autoptr::Test();
 
-	// queue
+	//Queue::Test1();
 	//Queue::Test();
 
 	//List::Test();

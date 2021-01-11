@@ -8,10 +8,10 @@ namespace Const
 	class A
 	{
 	private:
-		const int a;                // 常对象成员，只能在初始化列表赋值
 		int b;
 
 	public:
+		const int a = 100;                // 常对象成员，只能在初始化列表赋值
 		// 构造函数
 		A() : a(0) { };
 		A(int x) : a(x) { };        // 初始化列表
@@ -26,13 +26,16 @@ namespace Const
 		return b;
 	}
 
-	void function()
+	void Test1()
 	{
 		// 对象
 		A b;                        // 普通对象，可以调用全部成员函数、更新常成员变量
 		const A a;                  // 常对象，只能调用常成员函数
 		const A* p = &a;            // 指针变量，指向常对象
 		const A& q = a;             // 指向常对象的引用
+
+		A* cc = new A(10);
+		cout << "cc->a:" << cc->a << endl;
 
 		// 指针
 		char greeting[] = "Hello";
@@ -63,7 +66,6 @@ namespace Const
 		p2 = &b;
 		cout << "*p1:" << *p1 << endl;
 		cout << "*p2:" << *p2 << endl;
-
 	}
 
 

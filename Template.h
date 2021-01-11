@@ -6,6 +6,70 @@ using namespace std;
 
 namespace Template
 {
+	// ===================================================
+	// 函数模板测试
+	template<typename T, typename T1>
+	void SayHello(T a, T1 b) {
+		cout << "SayHello0:" << a << "，" << b << endl;
+	}
+	template<>
+	void SayHello(float a, float b) { // 不知如何用上
+		cout << "SayHello1:" << a << "，" << b << endl;
+	}
+	template<>
+	void SayHello(double a, int b) {
+		cout << "SayHello2:" << a << "，" << b << endl;
+	}
+	template<>
+	void SayHello(int a, double b) {
+		cout << "SayHello3:" << a << "，" << b << endl;
+	}
+	template<>
+	void SayHello(int& a, int& b) {	// 不知如何用上
+		cout << "SayHello4:" << a << "，" << b << endl;
+	}
+	template<>
+	void SayHello(int* a, int* b) {
+		cout << "SayHello5:" << *a << "，" << *b << endl;
+	}
+
+	void Test6() {
+		SayHello('a', 'b'); // 0 默认
+		SayHello(5, 55);	// 0 默认
+		SayHello(10.2, 5);	// 2 最匹配 double, int
+		SayHello(5, 55.5);  // 3 最匹配 int, double
+		int a = 100, b = 200;
+		int *pa = &a, *pb = &b;
+		SayHello(a, b);		// 0 默认；
+		SayHello(pa, pb);	// 5 同样匹配，最特殊的优先，有 * ；
+	}
+
+
+	// ================================================
+	// 特例化的是成员，而不是类
+	template <typename T> struct Foo {
+		Foo(const T &t = T()): mem(t){}
+		void Bar() {
+			cout << "BarBar" <<endl;
+		}
+		T mem;
+		// Foo 的其他成员
+	};
+
+	template<>
+	void Foo<int>::Bar() {
+		cout <<"int BarBar" <<endl;
+	}
+
+	void Test5() {
+		Foo<string> fs;
+		fs.Bar();
+		Foo<int> fi;
+		fi.Bar();
+	}
+
+
+
 	// =============================================================
 
 	// 模板，最特化匹配
@@ -28,6 +92,17 @@ namespace Template
 	struct S<int, T, T>{
 		void id() { cout << "Special case #3" << endl; }
 	};
+
+	template<typename T>
+	struct S<int*, T*, T*> {
+		void id() { cout << "Special case #4" << endl; }
+	};
+
+	template<typename T>
+	struct S<int&, T&, T&> {
+		void id() { cout << "Special case #5" << endl; }
+	};
+
 
 	template <typename T>
 	T GetMax(T a, T b) { 
@@ -65,12 +140,16 @@ namespace Template
 		return a > b ? a : b;
 	}
 
+
+
 	void Test4() {
 		S<float, float, float>().id(); // General
+		S<char, char, int>().id();	// General
 		S<int, int, char>().id();	// Special case#1
 		S<char, char, char>().id();	// Special case#2
 		S<int, int, int>().id();	// Special case#3
-		S<char, char, int>().id();	// General
+		S<int*, int*, int*>().id();	// Special case#4
+		S<int&, int&, int&>().id();	// Special case#5
 		//S<int, char, char>().id(); // 编译器无法决定模板的特殊性顺序
 
 		cout << endl;

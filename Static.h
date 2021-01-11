@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
+#include "test.h"
 using namespace std;
 
 
 namespace Static
 {
+
 
 	static int S;
 

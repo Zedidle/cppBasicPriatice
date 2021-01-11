@@ -10,7 +10,74 @@ int Test2() {
 
 namespace Virtual
 {
-	
+	// 双重指针测试
+	void Test2() {
+		
+		int i = 100;
+		int *p = &i;
+		int **pp = &p;
+
+		cout << "i:" << i <<endl;
+		cout << "*p:" << *p << endl;
+		cout << "**pp:" << **pp << endl;
+		cout << "&i:" << &i << endl;
+		cout << "p:" << p << endl;
+		cout << "&p:" << &p << endl;
+		cout << "pp:" << pp <<endl;
+		cout << "*pp:" << *pp <<endl;
+
+		// P == &i; *p == i;  pp == &p;  *pp == p;
+		// **pp = i; *pp = &i;
+
+	}
+
+
+
+
+
+
+	// ========================================
+	// 动态绑定的多态测试
+
+	class CBase {
+	public:
+		//virtual void SayHello() final{ // 如果用 final 修饰，则子类的函数无法覆盖该函数
+		virtual void SayHello(){
+			cout <<"CBase:  Hello " << endl; 
+		}
+	};
+
+	class CDriver : public CBase{
+	public:
+		void SayHello() {
+			cout << "CDriver:  Hello " << endl;
+		}
+	};
+
+
+	void Test1() {
+		CBase* pBase = new CDriver; // 多态
+		CDriver* pDriver = new CDriver;
+
+		pBase->SayHello();  // 调用的是CDriver的SayHello；很有可能是因为虚函数覆盖
+		pDriver->SayHello();
+		delete pBase;
+		delete pDriver;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	// =========================================
 
 	class Virtualbase
 	{
@@ -31,6 +98,11 @@ namespace Virtual
 				cout << "Virtualbase, Hello2 world" << endl;
 			}
 	};
+
+
+
+
+
 	
 
 	//sub class
@@ -153,6 +225,8 @@ namespace Virtual
 			
 	};
 
+
+	// 虚表的测试，打断点后可以 alt + 4 来看
 	void Test()
 	{
 		Base1 b1;

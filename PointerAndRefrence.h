@@ -6,9 +6,17 @@ using namespace std;
 
 namespace PAR
 {
+	struct Node {
+		Node(int v): val(v){};
+
+		int val;
+		Node* Left;
+		Node* Right;
+	};
+
+
 	// 指针常量和常量指针
 	void Test3() {
-		cout << endl;
 		const int i = 10;
 		int i2 = 11;
 		const int *p = &i;  // 常量指针
@@ -24,8 +32,25 @@ namespace PAR
 		printf("%d\n", *p2); // 10
 
 		cout << endl;
+		//test_Test0();
 
-		test_Test0();
+		cout << endl;
+
+		Node* p10 = new Node(10);
+		Node* p20 = new Node(20);
+
+		cout << p10->val << endl;
+		cout << p20->val << endl;
+		cout << "location:" << endl;
+		cout << p10 << endl;
+		cout << p20 << endl;
+		swap(p10, p20); // 意思是指向的地址交换了
+		cout <<endl;
+		cout << "location:" << endl;
+		cout << p10 << endl;
+		cout << p20 << endl;
+		cout << p10->val << endl;
+		cout << p20->val << endl;
 	}
 
 

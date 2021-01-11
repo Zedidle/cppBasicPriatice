@@ -154,7 +154,7 @@ namespace String
 			rfind：从后往前查找子串或字符出现的位置。
 
 			find_first_of：从前往后查找何处出现另一个字符串中包含的字符。例如：
-				s1.find_first_of("abc");  //查找s1中第一次出现"abc"中任一字符的位置
+			s1.find_first_of("abc");  //查找s1中第一次出现"abc"中任一字符的位置
 
 			find_last_of：从后往前查找何处出现另一个字符串中包含的字符。
 			find_first_not_of：从前往后查找何处出现另一个字符串中没有包含的字符。

@@ -4,6 +4,33 @@ using namespace std;
 namespace Malloc
 {
 
+
+	// malloc 测试
+	void Test1() {
+
+		cout << gcd(10, 4) <<endl;
+		cout <<endl;
+		int* p = (int*)malloc(100 * sizeof(int));
+		int* head = p;
+		//cout << p << endl;
+		//cout << p+1 <<endl;
+		for (int i = 0; i < 100; i++) {
+			*p = i;
+			++p;
+		}
+		p = head;
+		for (int i = 0; i < 100; i++) {
+			cout << *p <<endl;
+			++p;
+		}
+	}
+
+
+
+
+
+	// 测试智能指针
+
 	template<typename T>
 	class auto_release_ptr
 	{

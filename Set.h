@@ -22,7 +22,6 @@ s.swap()          交换两个集合变量
 
 namespace Set
 {
-
 	void Test()
 	{
 		set<int> Set;
@@ -30,8 +29,7 @@ namespace Set
 		Set.insert(100);
 		Set.insert(101);
 		cout << Set.size() << endl;
-
-		cout <<endl;
+		cout << endl;
 		typedef set<int> MakeSet_int;
 		MakeSet_int Set_int;
 		MakeSet_int Set_int2;
@@ -44,7 +42,6 @@ namespace Set
 		for (pos = Set_int.begin(); pos != Set_int.end(); pos++) {
 			cout << *pos << " ";
 		}
-
 
 
 		//cout << endl;
