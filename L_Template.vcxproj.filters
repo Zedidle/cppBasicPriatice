@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Source">
+      <UniqueIdentifier>{d1edc245-208b-4e07-8860-72bf95ca00b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Source\basic">
+      <UniqueIdentifier>{1998fe5d-d1f8-429a-8424-bcd8c2d49cd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\cppBasicPriatice\Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\T1.h">
+      <Filter>源文件\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Align.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Array2d.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\auto_ptr.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Cast.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Const.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Copy.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Decltype.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Define.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Delegate.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Explicit.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\file.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Friend.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\functor.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\inherit.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Inline.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\io.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\iterator.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\list.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Malloc.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Map.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Pair.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\PointerAndRefrence.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Queue.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Set.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Static.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\String.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Struct.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Virtual.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\test.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Typedef.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Union.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Vector.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cppBasicPriatice\Template.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Derived.h">
+      <Filter>源文件\Source\basic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

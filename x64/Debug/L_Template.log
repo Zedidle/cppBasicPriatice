@@ -1,0 +1,32 @@
+﻿  Main.cpp
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Template.h(140,12): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(269,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(270,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(271,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(272,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(277,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(278,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(279,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(280,76): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(286,43): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(286,47): warning C4312: “类型强制转换”: 从“int”转换到更大的“PFUN”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(287,40): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(287,44): warning C4312: “类型强制转换”: 从“int”转换到更大的“PFUN”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(288,40): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(288,44): warning C4312: “类型强制转换”: 从“int”转换到更大的“PFUN”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(289,43): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Virtual.h(289,47): warning C4312: “类型强制转换”: 从“int”转换到更大的“PFUN”
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Define.h(42,11): warning C4311: “<function-style-cast>”: 从“const char *”到“int”的指针截断
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Define.h(42,11): warning C4302: “<function-style-cast>”: 从“const char *”到“int”截断
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\Define.h(46,22): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\PointerAndRefrence.h(299,7): warning C4101: “b”: 未引用的局部变量
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(14,10): warning C4930: “std::string s1(void)”: 未调用原型函数(是否是有意用变量定义的?)
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(166,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(169,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(172,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(176,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(180,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(183,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(187,6): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\Cpp_VSProjects\L_Template\Source\cppBasicPriatice\String.h(203,27): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  L_Template.vcxproj -> E:\Cpp_VSProjects\L_Template\x64\Debug\L_Template.exe
